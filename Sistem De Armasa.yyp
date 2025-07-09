@@ -83,6 +83,7 @@
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
     {"id":{"name":"Sprite23","path":"sprites/Sprite23/Sprite23.yy",},},
     {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
+    {"id":{"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},},
     {"id":{"name":"TileSet3","path":"tilesets/TileSet3/TileSet3.yy",},},
     {"id":{"name":"Tl_grund","path":"tilesets/Tl_grund/Tl_grund.yy",},},
     {"id":{"name":"Tl_walls","path":"tilesets/Tl_walls/Tl_walls.yy",},},
