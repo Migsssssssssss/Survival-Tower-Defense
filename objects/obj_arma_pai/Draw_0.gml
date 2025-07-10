@@ -1,4 +1,4 @@
-/// @description Barras De Ações (HUD)6
+/// @description Barras De Ações (HUD)
 
 draw_self()
 if (player_with_gun){

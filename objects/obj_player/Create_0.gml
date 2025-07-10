@@ -3,11 +3,14 @@ spd = 3
 hspd = 0
 vspd = 0
 
+can_damage = true
+life = 10
+
 _manual_fire = 0
 
 arma = noone
 
-can_knocback = true
+state = scr_player_free
 
 randomize()
 

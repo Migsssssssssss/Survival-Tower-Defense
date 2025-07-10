@@ -12,7 +12,7 @@ function scr_enemy_go_target(){
 	
 	
 	scr_check_target()
-	
+
 		var _dir = point_direction(x, y, target.x, target.y)
 	
 		hspd = lengthdir_x(max_spd, _dir)
@@ -34,6 +34,9 @@ function scr_enemy_attack(){
 		var _dist = 40; // distância do centro
 		_inst.x = x + lengthdir_x(_dist, _dir_atk);
 		_inst.y = y + lengthdir_y(_dist, _dir_atk);
+		
+		_inst.damage = damage
+		_inst.knockback_force = force
 		
 		_inst.image_xscale = 2
 		_inst.image_yscale = 2

@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_approach",
+  "%Name":"scr_player",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_approach",
+  "name":"scr_player",
   "parent":{
-    "name":"Funções",
-    "path":"folders/Scripts/Funções.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
