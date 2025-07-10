@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_fim_da_animacao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_fim_da_animacao",
+  "parent":{
+    "name":"Funções",
+    "path":"folders/Scripts/Funções.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
