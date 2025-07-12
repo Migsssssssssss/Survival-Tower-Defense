@@ -13,8 +13,20 @@ function scr_player_free(){
 			image_xscale = -1
 		}else{image_xscale = 1}	 
 
-	hspd = (key_right - key_left) * spd
-	vspd = (key_down - key_up) * spd
+	var move = (key_right - key_left != 0 || key_down - key_up != 0)
+
+	if (move){
+		move_dir = point_direction(0, 0, key_right - key_left, key_down - key_up)
+		spd = approach(spd, max_spd, acc)
+		sprite_index = spr_run
+	} else {
+
+		spd = approach(spd, 0, dcc)
+		sprite_index = spr_idle
+	}
+	
+	hspd = lengthdir_x(spd * move, move_dir)
+	vspd = lengthdir_y(spd * move, move_dir)
 	
 }
 

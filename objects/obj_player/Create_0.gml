@@ -1,18 +1,24 @@
 
-spd = 3
-hspd = 0
-vspd = 0
+spd = 0					// Velocidade
+max_spd = 3				// Velocidade Maxima
+acc = 0.3				// Aceleração 
+dcc = 0.3				// Desaceleração
 
-can_damage = true
-life = 10
+move_dir = 0			// Direção Do Movimento
 
-_manual_fire = 0
+hspd = 0				// Velocidade Horizontal
+vspd = 0				// Velocidade Vertical
 
-arma = noone
+can_damage = true		// Pode Levar Dano
+life = 10				// Vida
 
-state = scr_player_free
+_manual_fire = false	// Tiro manual
+can_release_gun = false
+arma = noone			// Esta Com Uma Arma
 
-randomize()
+state = scr_player_free // Estado Do Player
+
+randomize()				// Randomiza Valores Aleatórios
 
 //Criando o Método De Controlar a Arma
 usa_arma = function(){
@@ -39,7 +45,7 @@ usa_arma = function(){
 		
 		if (arma.is_automatic){
 			
-			if (_auto_fire){
+			if (_auto_fire && arma.mag_ammo > 0){
 				hspd += lengthdir_x(_knockback_force, _knockback_dir)
 				vspd += lengthdir_y(_knockback_force, _knockback_dir)
 			}
@@ -55,12 +61,13 @@ usa_arma = function(){
 //Criando Método Para Me Livrar De Uma Arma
 joga_arma = function(){
 	if (arma){
-		var _joga = mouse_check_button_released(mb_right)
-		if (_joga){
+		var _joga = mouse_check_button_pressed(mb_right)
+		if (_joga && can_release_gun){
 			arma.player_with_gun = false
 			arma.speed = 15
 			arma.direction = arma.image_angle
 			arma = noone
+			alarm[1] = 60
 		}
 	}
 }

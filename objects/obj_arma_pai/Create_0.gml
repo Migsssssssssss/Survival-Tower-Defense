@@ -1,5 +1,4 @@
 
-
 #region Especificações Das Armas
 //Velocidade de projectile (cadencia)
 //delay do projectile (tempo de espera até o próximo projectile)
