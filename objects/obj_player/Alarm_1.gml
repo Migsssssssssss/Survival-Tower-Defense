@@ -1,2 +1,2 @@
-/// @description Pode Jogar Arma Fora
-can_release_gun = false
+/// @description Pode Pegar a Arma
+can_get_gun = true

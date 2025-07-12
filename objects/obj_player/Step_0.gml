@@ -5,6 +5,9 @@ state()
 
 joga_arma()
 usa_arma()
+arma_secundaria()
+troca_arma()
+
 
 if (life <= 0){
 	game_restart()

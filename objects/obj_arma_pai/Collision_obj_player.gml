@@ -1,8 +1,20 @@
 
-// Colidir Com o Player, Eu Vou Ser a Arma Dele SE Ele Não Tem Arma
-if mouse_check_button_pressed(mb_right) && (other.arma == noone) && (!other.can_release_gun){
-	player_with_gun = true
-	other.arma = id
-	other.can_release_gun = true
+
+if mouse_check_button_pressed(mb_right){
+	 
+	
+	if (other.arma == noone && other.can_get_gun){
+		player_with_gun = true
+		other.arma = id
+		other.can_get_gun = false
+		
+	} 
+	
+	if (other.arma && other.arma != id && other.secondary_gun == noone){
+	
+		other.secondary_gun = id
+		
+		
+	}
 }
 

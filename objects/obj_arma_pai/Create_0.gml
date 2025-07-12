@@ -7,6 +7,7 @@
 
 sprite_index = weapon_sprite
 
+
 //Minução
 is_reload = false
 mag_ammo = mag_size
